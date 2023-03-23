@@ -11,13 +11,13 @@ html {
 
 body {
     width: 1290px;
-    margin-top: 100px;
     background-color: black;
     color: seashell;
     /* opacity: 0.9; */
     position: relative;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     font-size: 22px;
     font-family: Helvetica, Arial, sans-serif;
 }
@@ -28,6 +28,7 @@ header {
     border: 1px solid seashell;
     display: flex;
     position: fixed;
+    top: 0;
     z-index: 2;
     background-color: black;
     align-items: center;
@@ -42,6 +43,10 @@ ul {
     display: flex;
 }
 
+a {
+    color: seashell;
+}
+
 li {
     display: inline-flex;
     text-decoration: underline;
@@ -49,11 +54,60 @@ li {
 }
 
 main {
-    margin-top: 71px;
+    margin-top: 70px;
     display: flex;
     align-items: center;
     flex-direction: column;
     opacity: 0.65;
+}
+
+footer {
+    width: 1290px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.65;
+}
+
+footer > h5 {
+    display: inline-flex;
+    width: 1290px;
+    margin-left: 20px;
+}
+
+.category {
+    margin-right: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.category:nth-child(3) {
+    margin: 0;
+}
+
+.category:last-child {
+    margin: 0;
+}
+
+.category > img {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.square {
+    width: 300px;
+    height: 280px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 40px;
+}
+
+.square:last-child {
+    margin: 0;
 }
 
 #logo {
@@ -101,26 +155,6 @@ main {
     align-content: center;
 }
 
-.category {
-    margin-right: 50px;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.category:nth-child(3) {
-    margin: 0;
-}
-
-.category:last-child {
-    margin: 0;
-}
-
-.category > img {
-    width: 300px;
-    height: 200px;
-    margin-bottom: 10px;
-}
-
 #locations {
     width: 1200px;
     height: 580px;
@@ -142,17 +176,17 @@ main {
     left: 412.5px
 }
 
-.square {
-    width: 300px;
-    height: 280px;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-right: 40px;
+#contact {
+    height: 200px;
+    text-align: center;
 }
 
-.square:last-child {
-    margin: 0;
+#contact > h2 {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+#contact > #email {
+    padding-bottom: 30px;
 }
 

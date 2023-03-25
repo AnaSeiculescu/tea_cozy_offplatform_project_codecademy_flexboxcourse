@@ -10,23 +10,29 @@ html {
 }
 
 body {
-    width: 1290px;
+    width: 100%;
+    max-width: 1290px;
     background-color: black;
     color: seashell;
     /* opacity: 0.9; */
     position: relative;
     display: flex;
+    /* justify-content: center; */
     flex-direction: column;
+    /* flex-grow: 2; */
     align-items: center;
     font-size: 22px;
     font-family: Helvetica, Arial, sans-serif;
+    
 }
 
 header {
     height: 69px;
-    width: 1290px;
+    width: 100%;
+    max-width: 1291px;
     border: 1px solid seashell;
-    display: flex;
+    display: inline-flex;
+    /* flex-shrink: 3; */
     position: fixed;
     top: 0;
     z-index: 2;
@@ -40,7 +46,7 @@ nav {
 }
 
 ul {
-    display: flex;
+
 }
 
 a {
@@ -55,16 +61,19 @@ li {
 
 main {
     margin-top: 70px;
-    display: flex;
+    width: 100%;
+    display: inline-flex;
     align-items: center;
     flex-direction: column;
+    /* flex-grow: 3; */
     opacity: 0.65;
 }
 
 footer {
-    width: 1290px;
+    width: 100%;
+    max-width: 1290px;
     height: 250px;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     align-items: center;
     opacity: 0.65;
@@ -72,7 +81,8 @@ footer {
 
 footer > h5 {
     display: inline-flex;
-    width: 1290px;
+    width: 100%;
+    max-width: 1290px;
     margin-left: 20px;
 }
 
@@ -104,10 +114,12 @@ footer > h5 {
     flex-direction: column;
     justify-content: center;
     margin-right: 40px;
+    margin-bottom: 40px;
 }
 
 .square:last-child {
-    margin: 0;
+    margin-right: 0;
+
 }
 
 #logo {
@@ -118,7 +130,8 @@ footer > h5 {
 
 #mission {
     height: 700px;
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     display: flex;
     align-items: center;
     background-image: url("images/img-mission-background.jpg");
@@ -135,8 +148,11 @@ footer > h5 {
 }
 
 #featured-tea {
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     margin: 80px 0 60px 0;
+    /* display: flex;
+    flex-wrap: wrap; */
 }
 
 #featured-tea-text {
@@ -150,30 +166,35 @@ footer > h5 {
 
 #featured-tea-images {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     align-content: center;
+    justify-content: center;
 }
 
 #locations {
-    width: 1200px;
-    height: 580px;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 580px;
     background-image: url("images/img-locations-background.jpg");
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 #locations-text {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
     align-items: center;
     position: relative;
 }
 
-#locations-text > h2 {
-    position: absolute;
-    top: 85px;
-    left: 412.5px
+#locations > h2 {
+    margin-bottom: 15px;
+    margin-top: 25px;
+    color: white;
 }
 
 #contact {
